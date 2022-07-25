@@ -1,4 +1,4 @@
-<h1>Search Engine Optimization (SEO)</h1>
+<h1>Blazor SEO (Search Engine Optimization)</h1>
 <p>SEO plays a crucial part in any website, especially for SPA. In this guide, when referencing SEO, we mean the technical part and not the non-technical part. We only focus on how to provide your website information to search engines.</p>
 <blockquote>You can <a href="https://github.com/Blazor-School/seo-blazor-server" target="_blank" rel="noopener">download the example</a> code used in this topic on GitHub.</blockquote>
 <hr class="my-4" />
@@ -10,7 +10,7 @@
     <li><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=en&amp;visit_id=637639370449073519-226133402&amp;rd=1" target="_blank" rel="noopener" title="Google SEO guidelines">Google SEO guidelines</a>.</li>
 </ul>
 <hr class="my-4" />
-<h1>The technical part of SEO</h1>
+<h2>The technical part of SEO</h2>
 <p>The goal of the technical part is to change the metadata tags in the <code>&lt;head&gt;</code> tag based on the request URL. For example, the <code>&lt;title&gt;</code> tag changes when the user navigates to a new component.</p>
 <p>Blazor Server does support SEO. However, the default template for Blazor Server does not support SEO and you have to implement it yourself.</p>
 <h3>Common mistakes when SEO with Blazor Server</h3>
@@ -24,7 +24,7 @@
 </ol>
 <p>Blazor Server is rendered on top of Razor Pages, the Razor Pages is not a SPA framework therefore it does not support updating the rendered HTML tag.</p>
 <hr class="my-4" />
-<h1>Implementing SEO for Blazor Server</h1>
+<h2>Implementing SEO for Blazor Server</h2>
 <p>The following steps are the steps to implement SEO for Blazor Server. These steps use the native Blazor Server technique and no third party is required.</p>
 <ol>
     <li>Create a service <code>MetadataProvider.cs</code>.</li>
